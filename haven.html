@@ -1,0 +1,9 @@
+<script>
+    function toonalles(){
+        fetch("http://127.0.0.1:5000/allekapiteinen")
+        .then(t => t.text())
+        .then(r => document.getElementById("uitkomst").innerHTML = r)
+    }
+</script>
+<input type="button" onclick="toonalles()" value="toonAlleKapiteins">
+<div id="uitkomst"></div>
